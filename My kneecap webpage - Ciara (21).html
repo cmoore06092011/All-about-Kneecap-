@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KNEECAP ☘ Fan Site</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(120deg, #064e3b, #16a34a, #4ade80);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #22c55e, #145a32);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 65px;
+    margin: 0;
+    text-shadow: 0 0 15px #bbf7d0;
+}
+
+header p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+nav button {
+    background: #22c55e;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #16a34a;
+    transition: transform 0.2s, background 0.2s;
+}
+
+nav button:hover {
+    transform: scale(1.15);
+    background: #4ade80;
+}
+
+.section {
+    display: none;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section.active {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(0,0,0,0.3);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.card h2 {
+    color: #bbf7d0;
+    text-shadow: 0 0 10px #22c55e;
+}
+
+.pronounce {
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.reaction button {
+    background: #16a34a;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Floating shamrocks */
+.shamrock {
+    position: fixed;
+    bottom: -50px;
+    font-size: 30px;
+    animation: floatUp 10s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-120vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KNEECAP ☘</h1>
+<p>
+Interactive fan page with info about Kneecap’s members, music, culture, impact, and fun facts. Click the shamrocks and buttons to explore.
+</p>
+</header>
+
+<nav>
+<button onclick="show('about')">🍀 About</button>
+<button onclick="show('members')">🎤 Members</button>
+<button onclick="show('music')">🎧 Music</button>
+<button onclick="show('culture')">📚 Culture</button>
+<button onclick="show('impact')">⚡ Impact</button>
+<button onclick="show('fun')">🎉 Fun Facts</button>
+</nav>
+
+<!-- ABOUT -->
+<div id="about" class="section active">
+<div class="grid">
+<div class="card">
+<h2>Who Are Kneecap</h2>
+<p>
+Kneecap are a rap group from Northern Ireland, rapping in Irish and English. They mix politics, humour, and youth culture in a bold, chaotic style. Their music is unapologetically loud, smart, and local.
+</p>
+</div>
+
+<div class="card">
+<h2>Origin Story</h2>
+<p>
+They started to make music to express themselves, show local culture, and make Irish relevant to young people. They wanted something fresh and unapologetic, reflecting real-life experiences.
+</p>
+</div>
+
+<div class="card">
+<h2>Style & Vibe</h2>
+<p>
+The music mixes chaotic beats, witty lyrics, and energetic performance. It’s aggressive, playful, and always meaningful, with a strong Irish identity.
+</p>
+</div>
+
+<div class="card">
+<h2>Name Meaning</h2>
+<p>
+“Kneecap” is memorable, bold, and slightly shocking. It reflects their rebellious style, humour, and intention to stand out.
+</p>
+</div>
+
+<div class="card">
+<h2>Why They Matter</h2>
+<p>
+Kneecap makes Irish rap accessible and culturally relevant, giving a voice to youth and challenging mainstream expectations.
+</p>
+</div>
+</div>
+</div>
+
+<!-- MEMBERS -->
+<div id="members" class="section">
+<div class="grid">
+
+<div class="card">
+<h2>Móglaí Bap</h2>
+<p class="pronounce">Pronounced MOH glee bap</p>
+<p><strong>Age / County:</strong> Around 30, Belfast</p>
+<p><strong>Hobbies:</strong> Writing lyrics, reading Irish literature, football, debating politics</p>
+<p><strong>How They Started:</strong> Started rapping with friends in Belfast to make Irish modern and relevant</p>
+<p><strong>Role:</strong> Main lyricist, clever wordplay, balances humour and serious commentary</p>
+<p><strong>Fun Fact:</strong> Often includes local Belfast slang that only locals fully understand</p>
+</div>
+
+<div class="card">
+<h2>Mo Chara</h2>
+<p class="pronounce">Pronounced MOH KHAR uh</p>
+<p><strong>Age / County:</strong> 26-28, Belfast</p>
+<p><strong>Hobbies:</strong> Skateboarding, performing live, social commentary, gaming</p>
+<p><strong>How They Started:</strong> Performing to channel frustration about youth issues and inequality</p>
+<p><strong>Role:</strong> Emotional powerhouse, adds raw energy and intensity</p>
+<p><strong>Fun Fact:</strong> Improvises parts of live performances to hype the crowd</p>
+</div>
+
+<div class="card">
+<h2>DJ Próvaí</h2>
+<p class="pronounce">Pronounced DEE JAY PROH vee</p>
+<p><strong>Age / County:</strong> 34-35, Derry</p>
+<p><strong>Hobbies:</strong> Producing beats, DJing, exploring music genres, coding music software</p>
+<p><strong>How They Started:</strong> Producing to create a unique sound and bring Irish beats into hip hop</p>
+<p><strong>Role:</strong> Producer and DJ, crafts beats, maintains chaotic-yet-cohesive sound</p>
+<p><strong>Fun Fact:</strong> Sometimes mixes traditional Irish instruments into modern trap beats</p>
+</div>
+
+</div>
+</div>
+
+<!-- MUSIC -->
+<div id="music" class="section">
+<div class="grid">
+<div class="card">
+<h2>Musical Style</h2>
+<p>
+They combine rap, trap, and Irish folk influences. Lyrics are often political or humorous. Beats are heavy but catchy, energetic, and unique.
+</p>
+</div>
+
+<div class="card">
+<h2>Languages</h2>
+<p>
+Rapping in both Irish and English keeps the music engaging and culturally relevant.
+</p>
+</div>
+
+<div class="card">
+<h2>Live Shows</h2>
+<p>
+Performances are chaotic, energetic, and immersive. Crowd interactions make each show unique.
+</p>
+</div>
+
+<div class="card">
+<h2>Lyrical Themes</h2>
+<p>
+Identity, politics, youth struggles, humour, and cultural pride. Every track feels deliberate and thoughtful.
+</p>
+</div>
+
+<div class="card">
+<h2>Why It Works</h2>
+<p>
+Chaotic beats, clever lyrics, and raw energy make their music stand out locally and globally.
+</p>
+</div>
+</div>
+</div>
+
+<!-- CULTURE -->
+<div id="culture" class="section">
+<div class="grid">
+<div class="card">
+<h2>Irish Language</h2>
+<p>
+Kneecap revitalizes Irish, making it modern and relevant to young audiences.
+</p>
+</div>
+
+<div class="card">
+<h2>Identity & Pride</h2>
+<p>
+They express Northern Irish identity and cultural pride in a modern context.
+</p>
+</div>
+
+<div class="card">
+<h2>Youth Voice</h2>
+<p>
+Represents voices of youth often overlooked, mixing humour, sarcasm, and serious topics.
+</p>
+</div>
+
+<div class="card">
+<h2>Rebellion & Playfulness</h2>
+<p>
+Challenge norms in music and culture while staying playful, witty, and clever.
+</p>
+</div>
+
+<div class="card">
+<h2>Humour</h2>
+<p>
+Sharp, witty, sometimes shocking humour balances the serious topics in their lyrics.
+</p>
+</div>
+</div>
+</div>
+
+<!-- IMPACT -->
+<div id="impact" class="section">
+<div class="grid">
+<div class="card">
+<h2>Cultural Impact</h2>
+<p>
+Influenced how young people see Irish music and culture, making rap in Irish cool and relevant.
+</p>
+</div>
+
+<div class="card">
+<h2>Controversy</h2>
+<p>
+They spark discussion through honesty, political commentary, and bold lyrics.
+</p>
+</div>
+
+<div class="card">
+<h2>Innovation</h2>
+<p>
+Chaotic beats, Irish language, and sharp lyrics make them creatively innovative.
+</p>
+</div>
+
+<div class="card">
+<h2>Representation</h2>
+<p>
+Give voice to a generation that is culturally aware, outspoken, and clever.
+</p>
+</div>
+
+<div class="card">
+<h2>Legacy</h2>
+<p>
+Making a mark in music culture, inspiring other artists and listeners.
+</p>
+</div>
+</div>
+</div>
+
+<!-- FUN FACTS -->
+<div id="fun" class="section">
+<div class="grid">
+<div class="card">
+<h2>Fun Facts About Kneecap</h2>
+<ul>
+<li>They rap in both Irish and English</li>
+<li>They openly support political causes like Palestinian solidarity</li>
+<li>Their lyrics include real Northern Ireland experiences</li>
+<li>The name “Kneecap” comes from a local slang nickname</li>
+<li>Known for chaotic, energetic live shows</li>
+<li>Móglaí Bap writes clever, sarcastic lyrics</li>
+<li>Mo Chara improvises on stage to hype the crowd</li>
+<li>DJ Próvaí sometimes adds traditional Irish instruments</li>
+<li>They use humour to balance serious social commentary</li>
+<li>Started to make Irish rap fun and accessible for young people</li>
+</ul>
+<p>Click the floating shamrocks for random extra facts!</p>
+</div>
+</div>
+</div>
+
+<footer>
+☘ By Ciara ☘
+</footer>
+
+<script>
+function show(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+const funFacts = [
+    "Kneecap rap in Irish and English",
+    "They support Palestinian solidarity",
+    "Móglaí Bap grew up in Belfast",
+    "Mo Chara adds energy and improvises live",
+    "DJ Próvaí produces unique beats",
+    "They mix humour, politics, and culture",
+    "Live shows are chaotic and energetic",
+    "They help make Irish relevant to youth",
+    "Lyrics reflect real-life Northern Ireland experiences",
+    "They influence a new generation of Irish musicians"
+];
+
+function spawnShamrock() {
+    const s = document.createElement("div");
+    s.className = "shamrock";
+    s.innerHTML = "☘";
+    s.style.left = Math.random() * 100 + "vw";
+    s.style.animationDuration = (8 + Math.random() * 5) + "s";
+    s.onclick = () => alert(funFacts[Math.floor(Math.random()*funFacts.length)]);
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 10000);
+}
+
+setInterval(spawnShamrock, 1500);
+</script>
+
+</body>
+</html>
